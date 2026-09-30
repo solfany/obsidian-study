@@ -4,22 +4,35 @@
 /* 너비: 본문·표·할 일 목록을 같은 폭(최대 60rem, 화면의 92%)으로 맞추고 가운데 정렬 */
 .home-wide {
   --file-line-width: 60rem;
-  --line-width: 60rem;        /* Minimal 테마 */
-  --max-width: 92%;           /* Minimal 테마 */
-  --bases-embed-width: 100%;  /* 표가 본문 폭을 벗어나지 않게 */
+  --line-width: 60rem;                      /* Minimal: 본문 폭 */
+  --max-width: 92%;                         /* Minimal: 최대 폭 */
+  --container-dataview-table-width: 100%;   /* Minimal: 표 컨테이너 폭 */
+  --container-table-width: 100%;
+  --container-table-max-width: 100%;
+  --table-drag-space: 0px;
+  --bases-embed-width: 100%;
   --bases-embed-transform: none;
 }
+
+/* 본문 영역 자체를 한 폭으로 고정 (읽기 모드 / 편집 모드) */
 .home-wide .markdown-preview-sizer,
 .home-wide .cm-sizer {
   max-width: min(60rem, 92%) !important;
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+/* 그 안의 모든 블록(문단·제목·표·할 일)은 본문 폭을 꽉 채우고 왼쪽 정렬 */
 .home-wide .markdown-preview-sizer > div,
-.home-wide .cm-content > * {
+.home-wide .cm-content > *,
+.home-wide .block-language-base,
+.home-wide .bases-embed,
+.home-wide .block-language-tasks {
+  width: 100% !important;
   max-width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
+  transform: none !important;
 }
 
 /* 속성(frontmatter) 영역과 파일명 제목 숨김 — 본문의 "# 홈"만 보이게 */
