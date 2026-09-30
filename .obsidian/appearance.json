@@ -1,5 +1,8 @@
 {
   "enabledCssSnippets": [
     "home-wide"
-  ]
+  ],
+  "cssTheme": "Minimal",
+  "textFontFamily": "Pretendard",
+  "interfaceFontFamily": "Pretendard"
 }

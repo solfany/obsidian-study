@@ -1,4 +1,8 @@
 [
   "obsidian-git",
-  "homepage"
+  "homepage",
+  "obsidian-style-settings",
+  "obsidian-front-matter-title-plugin",
+  "obsidian-icon-folder",
+  "obsidian-hider"
 ]

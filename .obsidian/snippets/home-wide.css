@@ -3,6 +3,9 @@
 /* 넓게: 줄 너비 제한 해제 */
 .home-wide {
   --file-line-width: 100%;
+  /* Minimal 테마용 */
+  --line-width: 100%;
+  --max-width: 100%;
 }
 
 /* 속성(frontmatter) 영역과 파일명 제목 숨김 — 본문의 "# 홈"만 보이게 */

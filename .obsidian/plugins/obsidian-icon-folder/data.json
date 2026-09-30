@@ -1,0 +1,11 @@
+{
+  "settings": {},
+  "00_inbox": "LiInbox",
+  "80_templates": "LiLayoutTemplate",
+  "90_archive": "LiArchive",
+  "Home.md": "LiLayoutDashboard",
+  "10_raw": "LiFileText",
+  "20_wiki": "LiLibrary",
+  "30_troubleshooting": "LiWrench",
+  "40_coding-test": "LiCode"
+}
