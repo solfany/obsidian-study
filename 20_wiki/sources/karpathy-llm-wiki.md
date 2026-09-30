@@ -2,12 +2,13 @@
 type: source
 title: "LLM Wiki (Karpathy gist)"
 description: LLM이 원본과 사람 사이에서 지속적으로 쌓이는 마크다운 위키를 직접 작성·유지하게 하는 개인 지식 베이스 패턴을 설명한 아이디어 문서.
+status: unverified
 tags: [llm, knowledge-base, obsidian, rag]
+created: 2026-09-30
+updated: 2026-09-30
 source_type: article
 sources:
   - "[[10_raw/articles/2026-09-30 llm-wiki]]"
-updated: 2026-09-30
-status: unverified
 ---
 
 # LLM Wiki (Karpathy gist)
