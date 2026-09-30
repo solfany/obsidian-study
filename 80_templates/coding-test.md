@@ -2,9 +2,10 @@
 type: coding-test
 title: "{{title}}"
 description: 
-tags: [coding-test]
-updated: {{date:YYYY-MM-DD}}
 status: tried
+tags: [coding-test]
+created: {{date:YYYY-MM-DD}}
+updated: {{date:YYYY-MM-DD}}
 platform: boj | programmers | leetcode | etc
 problem_id: 
 url: 

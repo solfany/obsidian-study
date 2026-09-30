@@ -2,9 +2,10 @@
 type: troubleshooting
 title: "{{title}}"
 description: 
-tags: [troubleshooting]
-updated: {{date:YYYY-MM-DD}}
 status: unsolved
+tags: [troubleshooting]
+created: {{date:YYYY-MM-DD}}
+updated: {{date:YYYY-MM-DD}}
 env: 
 error: 
 ---

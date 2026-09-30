@@ -2,12 +2,13 @@
 type: concept
 title: "{{title}}"
 description: 
+status: unverified
 tags: []
+created: {{date:YYYY-MM-DD}}
+updated: {{date:YYYY-MM-DD}}
 category: cs | backend | ai | algorithm
 sources:
   - "[[10_raw/...]]"
-updated: {{date:YYYY-MM-DD}}
-status: unverified
 ---
 
 # {{title}}

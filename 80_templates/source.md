@@ -2,12 +2,13 @@
 type: source
 title: "{{title}}"
 description: 
+status: unverified
 tags: []
+created: {{date:YYYY-MM-DD}}
+updated: {{date:YYYY-MM-DD}}
 source_type: article | paper | course | book
 sources:
   - "[[10_raw/...]]"
-updated: {{date:YYYY-MM-DD}}
-status: unverified
 ---
 
 # {{title}}

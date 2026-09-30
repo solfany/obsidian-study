@@ -45,25 +45,27 @@
 
 ## 3. Frontmatter
 
-모든 노트는 공통 필드 `type`, `title`, `description`, `tags`, `updated`, `status`를 가진다. `20_wiki/` 노트는 `sources`가 추가로 필수다.
+모든 노트는 공통 필드 `type`, `title`, `description`, `status`, `tags`, `created`, `updated`를 이 순서로 가진다. 유형별 추가 필드는 그 뒤에 둔다. `20_wiki/` 노트는 `sources`가 추가로 필수다.
 
 ```yaml
 ---
 type: source | concept | synthesis | troubleshooting | coding-test
 title: 노트 제목 (한국어)
 description: 한두 문장 요약
-tags: [tag1, tag2]
-sources:            # 20_wiki 필수
-  - "[[10_raw/...]]"
-updated: YYYY-MM-DD
 status: unverified | verified          # 20_wiki
         # unsolved | solved            # troubleshooting
         # tried | solved | review      # coding-test
+tags: [tag1, tag2]
+created: YYYY-MM-DD
+updated: YYYY-MM-DD
+sources:            # 20_wiki 필수
+  - "[[10_raw/...]]"
 ---
 ```
 
 - `20_wiki/`: 에이전트가 작성·수정한 노트는 기본 `unverified`. 사람이 검토한 뒤에만 `verified`로 바꾼다. 에이전트는 `verified`로 바꾸지 않는다. verified 노트를 에이전트가 수정하면 `unverified`로 되돌린다.
 - 개념 노트는 `category: cs | backend | ai | algorithm` 필드를 추가로 가진다 (폴더와 일치).
+- `created`는 노트를 만든 날. 이후 바꾸지 않는다.
 - `updated`는 내용이 바뀔 때마다 오늘 날짜로 갱신한다.
 
 ## 4. 작업 절차
