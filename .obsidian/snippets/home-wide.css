@@ -1,0 +1,4 @@
+/* Home 대시보드: cssclasses: [home-wide] 인 노트만 줄 너비 제한을 풀어 표를 넓게 보여 준다 */
+.home-wide {
+  --file-line-width: 100%;
+}
