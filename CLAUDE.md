@@ -1,6 +1,6 @@
 # CLAUDE.md — study 볼트 운영 규칙
 
-이 볼트는 공부용 지식 베이스이며 Karpathy의 LLM Wiki 패턴을 엄격하게 적용한다 ([[10_raw/articles/2026-09-30 llm-wiki]]).
+이 볼트는 공부용 지식 베이스이며 Karpathy의 LLM Wiki 패턴을 엄격하게 적용한다 (원문: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
 사람은 원본(raw)을 모으고 트러블슈팅·코딩테스트 기록을 쓰며, 에이전트(Claude)는 위키(wiki)를 작성·유지한다.
 
 ## 1. 폴더 구조
