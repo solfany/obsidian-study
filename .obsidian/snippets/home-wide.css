@@ -1,34 +1,41 @@
-/* Home 대시보드 전용 (frontmatter cssclasses: [home-wide] 인 노트만 적용) */
+/* Home 대시보드 전용 (frontmatter cssclasses: [home-wide] 인 노트만 적용)
+   읽기 모드(.markdown-rendered)와 편집 모드(라이브 프리뷰) 모두에 적용한다 */
 
-/* 넓게: 줄 너비 제한 해제 */
+/* 너비: 표가 잘리지 않을 만큼 넓게, 좌우 여백은 남긴다 */
 .home-wide {
-  --file-line-width: 100%;
+  --file-line-width: 64rem;
   /* Minimal 테마용 */
-  --line-width: 100%;
-  --max-width: 100%;
+  --line-width: 64rem;
+  --max-width: 90%;
 }
 
 /* 속성(frontmatter) 영역과 파일명 제목 숨김 — 본문의 "# 홈"만 보이게 */
 .home-wide .metadata-container,
 .home-wide .inline-title {
-  display: none;
+  display: none !important;
 }
 
 /* 섹션 제목: 작고 또렷하게, 아래 얇은 선으로 구분 */
-.home-wide h2 {
+.home-wide .markdown-rendered h2,
+.home-wide .cm-line.HyperMD-header-2 {
   font-size: 1.05em;
-  margin-top: 2em;
   padding-bottom: 0.35em;
   border-bottom: 1px solid var(--background-modifier-border);
 }
+.home-wide .markdown-rendered h2 {
+  margin-top: 2em;
+}
+.home-wide .cm-line.HyperMD-header-2 {
+  padding-top: 1.2em;
+}
 
-/* 섹션 설명 문장은 흐리게 */
-.home-wide h2 + p {
+/* 섹션 설명 문장은 흐리게 (읽기 모드) */
+.home-wide .markdown-rendered h2 + p {
   color: var(--text-muted);
   font-size: 0.85em;
 }
 
-/* 안내 콜아웃: 한 줄로 얇게 */
+/* 안내 콜아웃: 얇게 */
 .home-wide .callout {
   padding: 0.5em 0.9em;
   font-size: 0.9em;
@@ -40,16 +47,9 @@
   font-weight: 600;
   color: var(--text-accent);
   margin: 0.9em 0 0.2em;
-  text-transform: none;
 }
 
 /* Tasks: 항목 사이 간격 */
 .home-wide .plugin-tasks-query-result .task-list-item {
   padding: 0.15em 0;
-}
-
-/* Tasks: "n tasks" 개수 표시는 흐리게 */
-.home-wide .tasks-count {
-  color: var(--text-faint);
-  font-size: 0.75em;
 }
