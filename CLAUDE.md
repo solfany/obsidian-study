@@ -139,14 +139,28 @@ sources:            # 20_wiki 필수
 - 작업 종류: `ingest`, `query`, `lint`, `update`, `link`, `archive`
 - `grep "^## \[" 20_wiki/log.md | tail -5`로 최근 작업을 확인할 수 있도록 접두어를 반드시 지킨다.
 
-## 8. 템플릿
+## 8. 인박스 정리
+
+적는 방식과 공통 절차는 상위 폴더 `../CLAUDE.md` 3절을 따른다. 이 볼트의 인박스는 ingest 대기열이므로, 메모는 대부분 원본(`10_raw/`)으로 옮긴 뒤 ingest한다.
+
+| 기호 | 옮길 곳 | 비고 |
+|---|---|---|
+| `- ?` 궁금한 것 | query 절차(4절)로 답한다 | 보존 가치가 있으면 `20_wiki/synthesis/` 저장 제안 |
+| `- !` 문제·에러 | `30_troubleshooting/` | 사람 영역이므로 원문 줄을 "증상"에 그대로 넣은 템플릿 노트 생성만 제안한다. 원인·해결은 사람이 쓴다 |
+| `- =` 결정, `- ~` 아이디어, 기호 없음 (메모·링크) | `10_raw/` 알맞은 하위 폴더 (링크·글은 `articles/`, 강의 메모는 `courses/`, 책 메모는 `books/`) | 사람 확인 후 원문을 고치지 않고 그대로 옮긴다. 파일명 `YYYY-MM-DD-<주제>.md`. 그다음 ingest를 제안 |
+| `- [ ]` 할 일, `- [x]` 한 일 | 이 볼트에는 할 일 목록이 없다 | life 일일 노트나 projects로 제안하거나, 인박스에 남긴다 |
+
+- 코딩테스트 풀이 메모는 `40_coding-test/`로 가야 하므로 사람에게 노트 생성을 제안한다 (5절).
+
+## 9. 템플릿
 
 - `80_templates/source.md` — 소스 요약 (에이전트)
 - `80_templates/concept.md` — 개념 (에이전트)
 - `80_templates/troubleshooting.md` — 트러블슈팅 (사람)
 - `80_templates/coding-test.md` — 코테 풀이 (사람)
+- `80_templates/inbox.md` — 하루치 인박스 (일일 노트 기능이 `00_inbox/`에 생성, 사람)
 
-## 9. Git 커밋 규칙
+## 10. Git 커밋 규칙
 
 - 이 볼트는 git 저장소(GitHub `solfany/obsidian-study`)로 관리한다.
 - **ingest, lint, 구조 변경 작업이 끝나면 커밋한다.** 메시지 형식:
