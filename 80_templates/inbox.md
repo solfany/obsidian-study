@@ -1,7 +1,13 @@
-# {{date:YYYY-MM-DD}} 인박스
+<%*
+const t = tp.file.title;
+if (t.startsWith("무제") || t.startsWith("Untitled")) {
+  await tp.file.rename(tp.date.now("YYYY-MM-DD-HHmm"));
+}
+-%>
+# <% tp.date.now("YYYY-MM-DD") %> 인박스
 
 > [!info] 기호
 > `- [ ]` 할 일 · `- [x]` 한 일 · `- ?` 궁금한 것 · `- !` 문제 · `- =` 결정 · `- ~` 아이디어 · `- ` 기타
 > 형식: `- <기호> <대상> <내용>` — 대상(프로젝트·영역·주제)은 생략 가능, 자세한 내용은 아래에 들여쓰기
 
-- 
+- <% tp.file.cursor() %>

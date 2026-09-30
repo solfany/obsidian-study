@@ -2,5 +2,7 @@
   "attachmentFolderPath": "10_raw/assets",
   "userIgnoreFilters": [
     "graphify-out/"
-  ]
+  ],
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00_inbox"
 }

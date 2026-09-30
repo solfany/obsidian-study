@@ -158,7 +158,7 @@ sources:            # 20_wiki 필수
 - `80_templates/concept.md` — 개념 (에이전트)
 - `80_templates/troubleshooting.md` — 트러블슈팅 (사람)
 - `80_templates/coding-test.md` — 코테 풀이 (사람)
-- `80_templates/inbox.md` — 하루치 인박스 (일일 노트 기능이 `00_inbox/`에 생성, 사람)
+- `80_templates/inbox.md` — 인박스 (새 노트·일일 노트 기능이 `00_inbox/`에 생성. Templater 문법, 사람)
 
 ## 10. Git 커밋 규칙
 
