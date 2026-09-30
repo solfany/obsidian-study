@@ -14,7 +14,7 @@ cssclasses: [home-wide]
 > [!tip] 메모는 Cmd+N(또는 달력 아이콘)으로 `00_inbox/`에 아무렇게나 적고, 정리는 AI에게 "인박스 정리해줘"
 > 자료는 `10_raw/`에 넣고 "ingest해줘" · 궁금한 건 그냥 질문 · [[20_wiki/index|위키 목차]] · [[20_wiki/log|작업 기록]]
 
-## 인박스
+## 📥 인박스
 
 ```base
 filters:
@@ -32,7 +32,7 @@ views:
         direction: DESC
 ```
 
-## 최근 원본
+## 📄 최근 원본
 
 `10_raw/`에 새로 넣은 자료. 아직 ingest하지 않았다면 AI에게 "ingest해줘".
 
@@ -54,7 +54,7 @@ views:
     limit: 10
 ```
 
-## 검토 대기 위키
+## 🔍 검토 대기 위키
 
 AI가 쓴 위키 노트(`unverified`). 읽어 보고 맞으면 `status`를 `verified`로 바꾼다.
 
@@ -76,7 +76,7 @@ views:
         direction: DESC
 ```
 
-## 트러블슈팅 · 코테 복습
+## 🛠 트러블슈팅 · 코테 복습
 
 ```base
 filters:
@@ -102,7 +102,7 @@ views:
         direction: DESC
 ```
 
-## 최근 위키
+## 📝 최근 위키
 
 ```base
 filters:

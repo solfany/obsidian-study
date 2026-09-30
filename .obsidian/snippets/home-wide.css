@@ -1,4 +1,52 @@
-/* Home 대시보드: cssclasses: [home-wide] 인 노트만 줄 너비 제한을 풀어 표를 넓게 보여 준다 */
+/* Home 대시보드 전용 (frontmatter cssclasses: [home-wide] 인 노트만 적용) */
+
+/* 넓게: 줄 너비 제한 해제 */
 .home-wide {
   --file-line-width: 100%;
+}
+
+/* 속성(frontmatter) 영역과 파일명 제목 숨김 — 본문의 "# 홈"만 보이게 */
+.home-wide .metadata-container,
+.home-wide .inline-title {
+  display: none;
+}
+
+/* 섹션 제목: 작고 또렷하게, 아래 얇은 선으로 구분 */
+.home-wide h2 {
+  font-size: 1.05em;
+  margin-top: 2em;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+/* 섹션 설명 문장은 흐리게 */
+.home-wide h2 + p {
+  color: var(--text-muted);
+  font-size: 0.85em;
+}
+
+/* 안내 콜아웃: 한 줄로 얇게 */
+.home-wide .callout {
+  padding: 0.5em 0.9em;
+  font-size: 0.9em;
+}
+
+/* Tasks: 묶음 제목(프로젝트 폴더)을 작은 라벨처럼 */
+.home-wide .tasks-group-heading {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: var(--text-accent);
+  margin: 0.9em 0 0.2em;
+  text-transform: none;
+}
+
+/* Tasks: 항목 사이 간격 */
+.home-wide .plugin-tasks-query-result .task-list-item {
+  padding: 0.15em 0;
+}
+
+/* Tasks: "n tasks" 개수 표시는 흐리게 */
+.home-wide .tasks-count {
+  color: var(--text-faint);
+  font-size: 0.75em;
 }
