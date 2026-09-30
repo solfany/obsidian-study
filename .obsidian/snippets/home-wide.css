@@ -1,12 +1,25 @@
 /* Home 대시보드 전용 (frontmatter cssclasses: [home-wide] 인 노트만 적용)
    읽기 모드(.markdown-rendered)와 편집 모드(라이브 프리뷰) 모두에 적용한다 */
 
-/* 너비: 표가 잘리지 않을 만큼 넓게, 좌우 여백은 남긴다 */
+/* 너비: 본문·표·할 일 목록을 같은 폭(최대 60rem, 화면의 92%)으로 맞추고 가운데 정렬 */
 .home-wide {
-  --file-line-width: 64rem;
-  /* Minimal 테마용 */
-  --line-width: 64rem;
-  --max-width: 90%;
+  --file-line-width: 60rem;
+  --line-width: 60rem;        /* Minimal 테마 */
+  --max-width: 92%;           /* Minimal 테마 */
+  --bases-embed-width: 100%;  /* 표가 본문 폭을 벗어나지 않게 */
+  --bases-embed-transform: none;
+}
+.home-wide .markdown-preview-sizer,
+.home-wide .cm-sizer {
+  max-width: min(60rem, 92%) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.home-wide .markdown-preview-sizer > div,
+.home-wide .cm-content > * {
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 /* 속성(frontmatter) 영역과 파일명 제목 숨김 — 본문의 "# 홈"만 보이게 */
