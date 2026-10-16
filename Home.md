@@ -5,7 +5,7 @@ description: study 볼트 대시보드
 status: active
 tags: [home]
 created: 2026-09-30
-updated: 2026-09-30
+updated: 2026-10-16
 cssclasses: [home-wide]
 ---
 
@@ -13,6 +13,23 @@ cssclasses: [home-wide]
 
 > [!tip] 메모는 Cmd+N(또는 달력 아이콘)으로 `00_inbox/`에 아무렇게나 적고, 정리는 AI에게 "인박스 정리해줘"
 > 자료는 `10_raw/`에 넣고 "ingest해줘" · 궁금한 건 그냥 질문 · [[20_wiki/index|위키 목차]] · [[20_wiki/log|작업 기록]]
+
+## 이번 주 공부
+
+[[50_plans/study-plan|공부 계획표]] · 끝나면 체크. 밀린 것도 같이 보인다.
+
+```tasks
+not done
+path includes 50_plans
+due before in 8 days
+sort by due
+group by heading
+hide backlink
+hide edit button
+hide postpone button
+hide task count
+hide toolbar
+```
 
 ## 인박스
 
